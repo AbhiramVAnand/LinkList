@@ -1,0 +1,141 @@
+.form_container {
+    background-color: #fff;
+
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container .form_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* width: 79%;       */
+    padding: 80px 200px;
+    gap: 45px;
+
+    border-radius: 16px;
+    /* background: url("./img/container_bg.png"); */
+    background-color: #5032b0;
+    background-repeat: no-repeat;
+}
+  
+.form_container .form_wrapper .logo_name{
+    color: #fff;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    font-family: "Lexend";
+    font-style: normal;
+}
+
+.form_container .form_wrapper .title{
+        color: var(--Grey-75, #bfbfbf);
+            text-align: center;
+            font-family: "Lexend";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+}
+
+.form_container .form_wrapper form{
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 15px;
+            color: #fff;
+}
+
+.form_container .form_wrapper form input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    padding: 20px;
+    gap: 10px;
+    font-family: "lexend";
+
+
+    color: #5032b0;
+    border-radius: 88px;
+    border: 1px solid var(--Grey-15, #14034b);
+    background-color: #fff;
+}
+
+.form_container .form_wrapper form input &::placeholder{
+    color: #5032b0; 
+}
+
+.form_container .form_wrapper form button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+
+    padding: 14px 24px;
+    gap: 10px;
+    border-radius: 63px;
+    background: var(--Green-60, #fff);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form_container .form_wrapper form button    .button_text {
+        color: var(--Grey-15, #5032b0);
+
+        text-align: center;
+        font-family: "Lexend";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        padding-left: 45px;
+        padding-right: 50px;
+
+        
+    }
+
+    .form_container .form_wrapper form   label {
+        display: flex;
+        align-items: center;
+        
+        gap: 10px;
+        cursor: pointer;
+        color: #161616;
+
+        font-size: 12px;
+        font-family: "lexend";
+
+        img {
+            width: 32px;
+        }
+        .add_text {
+            color: #fff;
+        }
+    }    
+
+    .form_container .form_wrapper   p {
+        display: flex;
+            flex-direction: row;
+
+            color: var(--Grey-75, #bfbfbf);
+            margin-top: 10px;
+            
+            font-size: 12px;
+            font-family: "lexend";
+
+    }
+
+  
