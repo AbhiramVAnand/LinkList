@@ -1,4 +1,19 @@
 {
-    "manifest_version": "3",
-    "name": "LinkList"
-}
+    "name": "LinkList",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Base Level Extension",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions":["activeTab","tabs", "identity", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://link-list-bwe83tqvd-abhiramvanands-projects.vercel.app/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
