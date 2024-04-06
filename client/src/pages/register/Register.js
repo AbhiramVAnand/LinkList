@@ -23,6 +23,7 @@ async function handleSubmit(){
     {
       email: formData.email,
       password:formData.password,
+      // email_confirm:true,
       options:{
   data:{
     name:formData.name,

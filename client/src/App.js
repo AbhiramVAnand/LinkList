@@ -33,6 +33,7 @@ import React, { useState, useEffect } from 'react';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Home from './pages/home/Home';
+import Link_component from './components/Link_component';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
@@ -59,12 +60,14 @@ const App = () => {
       <Routes>
         <Route path={'/register'} element={ <Register />} />
         <Route path={'/'} element={ <Login setToken={setToken}/>} />
-        {token?<Route path={'/home'} element={ <Home token={token} />} />:""}
+        {/* {token?<Route path={'/home'} element={ <Home  />} />:""} */}
+        <Route path={'/home'} element={ <Home />} />
 
       </Routes>
      
       
       </BrowserRouter>
+    // <Link_component />
   )
 }
 
