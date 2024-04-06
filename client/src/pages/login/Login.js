@@ -86,6 +86,9 @@ export default function Login({ setToken }) {
       if (error) throw error;
       console.log(user);
       setToken(user);
+      chrome.runtime.sendMessage({ message: user }, (response) => {
+        console.log('Response from extension:', response);
+      });
       navigate('/home');
     } catch (error) {
       alert(error.message || "An unexpected error occurred.");

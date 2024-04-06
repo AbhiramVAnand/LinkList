@@ -52,6 +52,19 @@ const App = () => {
     
   }, [])
   
+  // Inject content script (replace with your actual injection method)
+  const script = document.createElement('script');
+  script.src = 'content.js';
+  document.body.appendChild(script);
+
+  function sendDataToExtension(data) {
+    chrome.runtime.sendMessage({ from: "webpage", data: data });
+  }
+
+// Example usage
+  const messageData = { message: data };
+  sendDataToExtension(messageData);
+
 
  
   return (
